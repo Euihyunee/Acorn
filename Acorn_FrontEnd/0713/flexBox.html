@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .section1{
+            display: flex;
+            /* 부모요소에서 입력한다 */
+            justify-content: space-between;
+            /* space-between 박스 사이만 공간 정렬 */
+            /* space-around 첫, 끝 박스 옆 공간도 정렬 */
+            /* center 가운데에 딱 붙여서 정렬 */
+            /* flex-end 전체가 오른쪽 창 끝으로 */
+
+            height: 11vh;
+            border: 3px solid brown;
+
+            /* 세로 쓰기 모드 (축도 바뀜) 비율 높이 가로 100wh */
+        }
+        .section2{
+            display: flex;
+            margin-right: 20px;
+        }
+        .section3{
+            display: flex;
+            justify-content: space-between;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+        }
+        .box1{
+            background-color: lightblue;
+        }
+        .box2{
+            background-color: lightcoral;
+            margin-right: 5px;
+        }
+        .box3{
+            background-color: lightcyan;
+        }
+        .d2{
+            width:500px;
+            height: 130px;
+            border: 1px solid;
+        }
+        .ind1{
+            background-color: lightcoral;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        .ind2{
+            background-color: lightcoral;
+            margin-right: 5px;
+        }
+        .Div1{
+            width: 500px;
+            height: 400px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .div2{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            
+        }
+        .div3{
+            background-color: brown;
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <section class="section1">
+        <div class="box1">box1</div>
+        <section class="section2">
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+        </section>
+    </section>
+    <div class="d2">
+        <section class="section3">
+            <div class="ind1">
+
+            </div>
+            <div class="ind2">
+    
+            </div>
+        </section>
+    </div>
+    <div class="Div1"> 
+        <div class="div2">
+            
+            <div class="div3">
+                div3
+            </div>
+        </div>
+    </div>
+</body>
+</html>

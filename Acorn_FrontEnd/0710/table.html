@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width: 500px;
+        }
+        th, td{
+            width: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <table border>
+        <caption><b>색깔의 종류</b></caption>
+        <thead style="border: 4px solid green">
+            <tr>
+                <td>종류</td> <td>비비드</td> <td>파스텔</td> <td>어두운 계열</td>
+            </tr>
+        </thead>
+        <tbody style="border: 4px solid gold">
+            <tr>
+                <td>1</td> <td>빨강</td> <td>분홍</td> <td>검정</td>
+            </tr>
+            <tr>
+                <td>2</td> <td>파랑</td> <td>하늘</td> <td>남색</td>
+            </tr>
+            <tr>
+                <td>3</td> <td>노랑</td> <td>연보라</td> <td>회색</td>
+            </tr>
+        </tbody>
+        <tfoot style="border: 4px solid red;">
+            <tr>
+                <td>합계</td> <td>3개</td> <td>3개</td> <td>3개</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <table border>
+        <caption><b>색깔의 종류</b></caption>
+        <thead style="border: 4px solid green">
+            <tr>
+                <td>종류</td> <td colspan="2">밝은 색</td> <td>어두운 계열</td>
+            </tr>
+        </thead>
+        <tbody style="border: 4px solid gold">
+            <tr>
+                <td>1</td> <td>빨강</td> <td>분홍</td> <td>검정</td>
+            </tr>
+            <tr>
+                <td>2</td> <td>파랑</td> <td rowspan="2">하늘</td> <td>남색</td>
+            </tr>
+            <tr>
+                <td>3</td> <td>노랑</td>  <td>회색</td>
+            </tr>
+        </tbody>
+        <tfoot style="border: 4px solid red;">
+            <tr>
+                <td>합계</td> <td>3개</td> <td>3개</td> <td>3개</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

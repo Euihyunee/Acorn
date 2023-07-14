@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: whitesmoke;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+    font-family: Arial, Helvetica;
+    margin-left: 10px;
+}
+a:hover{
+    color: #01a1dd;
+}
+footer img:hover{
+    color: #01a1dd;
+    transform: scale(2,2);
+}
+.logo{
+    margin-left: 30px;
+}
+.logo img{
+    width: 60px;
+}
+.nav-menu{
+    padding:0 15p;
+}
+
+main{
+    background-image: url("../image/background4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-bottom: 20px;
+}
+.ment1{
+    position: relative;
+    top: 680px;
+    left: 45px;
+    font-size: 3em;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ment2{
+    position: relative;
+    top: 675px;
+    left: 45px;
+    font-size: 3em;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    position: relative;
+    top: 680px;
+    left: 45px;
+    padding: 5px 24px;
+    /* 위아래 5px 좌우 24px  */
+    font-weight: 400;
+    color: white;
+    background-color: #01a1dd;
+    border: 0;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+}
+footer{
+    color: gray;
+    font-weight: 600;
+    letter-spacing: 1.5p;
+    font-size: 14px;
+    padding: 10px 50px;
+    background-color: #01a1dd;
+
+}
+footer img{
+    margin-left: 10px;
+}
+footer a img{
+    width: 20px
+}

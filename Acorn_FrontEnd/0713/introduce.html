@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "../css/main.css">
+    <style>
+        .list{
+            width:100%; 
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: center;
+        }
+        .list:nth-child(2){
+            background-color: #4e5a56;
+            background-size: cover;
+            background-attachment: fixed; 
+            background-position: center; 
+        }
+
+        .list:nth-child(3){
+            background-color: #9d949e;
+            background-size: cover;
+            background-attachment: fixed; 
+            background-position: center; 
+        }
+
+        .list:nth-child(4){
+            background-color: #e0d8cc;
+            background-size: cover;
+            background-attachment: fixed; 
+            background-position: center; 
+        }
+
+        .list:nth-child(5){
+            background-color: #8a6e8a;
+            background-size: cover;
+            background-attachment: fixed; 
+            background-position: center; 
+        }
+    </style>
+</head>
+<body>
+    <div id="contatiner">
+        <header id = "header"> 
+            <nav class ="menu">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href = "about.html"><b>About</b></a></li>
+                    <li><a href = "favorites.html"><b>What I love</b></a></li>
+                    <li><a href = "contact.html"><b>Contact</b></a></li>
+                </ul>
+            </nav>
+        </header> 
+        <div class="list">
+            <div class="one">
+              <span class="profile"><img src="../image/me_test.png" width="550px;" height="550px" alt=""/></span> 
+              <h3><strong>Hello! I'm EuiHyune.</strong> <br>You can scroll down if you want to see me more!</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

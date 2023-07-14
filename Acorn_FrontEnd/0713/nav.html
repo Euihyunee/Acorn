@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{
+
+        }
+        .section1{
+            display: flex;
+            justify-content: space-around;
+        }
+        article{
+            width: 120px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid lightgray;
+            align-items: center;
+        }
+        div{
+            font-weight: bold;
+            font-size: large;
+        }
+        .section2{
+            margin-top: 20px;
+            display: flex;
+            height: 100vw;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .div1{
+            background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MjJfMjE5%2FMDAxNjg0NzQzMjU2NTA1.uvuIYnDIHvIf_2wbaTSiwoXyWry6fF_rmdva8HShgtog._wwNPVX_yMH-O_fw8oQauGGW-vAZDqkhdwkPYnIranYg.JPEG.toreta17%2FK-007.jpg&type=a340);
+            width:400px;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border: 1px solid;
+        }
+        .div2{
+            width: 320px;
+            height: 250px;
+            border: 1px solid lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .centerText{
+            display: flex;
+            justify-content: center;
+        }
+        a:link{ /* 방문하지 않은 링크 선택  */
+            color: azure;
+            text-decoration: none;
+        }
+        a:visited{ /*  방문한 링크 */
+            color: rgb(138, 137, 137);
+        }
+        a:hover{ /*  마우스 올림 */ 
+            color: red;
+            text-decoration: underline;
+        }
+        a:focus{ /* 포커스를 받았을 때 (탭 키 눌러서 선택)  */
+            color: hotpink;
+        }
+        a:active{ /*  활성 링크 선택(클릭해서 이동하는 순간 */
+            background-color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <hr>
+            <h2>new arrivals</h2>
+            <section class="section1">
+                <article>
+                    <div>kol cup</div>
+                    <div>955</div>
+                </article>
+                <article>
+                    <div>kol cup</div>
+                    <div>955</div>
+                </article>
+                <article>
+                    <div>kol cup</div>
+                    <div>955</div>
+                </article>
+                <article>
+                    <div>kol cup</div>
+                    <div>955</div>
+                </article>
+            </section>
+        </header>
+        <hr>
+        <body>
+            <section class="section2">
+                <div class="div1">
+
+                </div>
+                <div class="div2">
+                    <span>
+                        What started as a hobby <br>
+                        and a way to pass time, <br>
+                        evolved into a real passion. <br>
+                        <b class="centerText">
+                            <a href="">our story</a>
+                        </b>
+                    </span>
+                    
+                </div>
+            </section>
+            
+        </body>
+    </div>
+</body>
+</html>

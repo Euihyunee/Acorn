@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+        *{
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        .header1{
+            width: 720px;
+            background-color: aquamarine;
+        }
+        .ulheader{
+            display: inline-flex;
+            align-items: center;
+            height: 20px;
+        }
+        li{
+            display: inline;
+            text-decoration: none;
+            margin: 10px;
+        }
+        a:link{ /* 방문하지 않은 링크 선택  */
+            color: azure;
+            text-decoration: none;
+        }
+        a:visited{ /*  방문한 링크 */
+            color: black;
+        }
+        a:hover{ /*  마우스 올림 */ 
+            color: lightblue;
+            text-decoration: none;
+        }
+        a:focus{ /* 포커스를 받았을 때 (탭 키 눌러서 선택)  */
+            color: hotpink;
+        }
+        a:active{ /*  활성 링크 선택(클릭해서 이동하는 순간 */
+            background-color: lightblue;
+        }
+        .BodyDiv1{
+            width: 720px;
+            height: 500px;
+            display: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("../image/background3.png");
+            background-position: 0px -400px;
+        }
+        .BodyDiv2{
+            width: 500px;
+            height: 200px;
+            color: white;
+            position: relative;
+            top: 350px;
+            left: 10px;
+        }
+        .fontSize1{›
+            font-size: 20px;
+            color: white;
+            background-color: rgb(78, 78, 196);
+        }
+        .fontSize2{
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .footer1{
+            width: 700px;
+            padding-left: 20px;
+            padding-top: 10px;
+            background-color: aquamarine;
+
+        }
+        .footerDiv1{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header1">
+        <nav>
+            <ul class="ulheader">
+                <img style="margin: 10px;" width="30"
+                src="../image/logo1.png" alt="">
+                <li><a href=""><b>ABOUT</b></a></li>
+                <li><a href=""><b>CAFES</b></a></li>
+                <li><a href=""><b>MENU</b></a></li>
+                <li><a href=""><b>COMPANY</b></a></li>
+                <li><a href=""><b>NEWS</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="BodyDiv1">
+            <div class="BodyDiv2">
+                <span><b>WELCOME EVERYONE</b></span><br>
+                <span class="fontSize2">
+                    <b>블루보틀에 오신 것을 <br>환영합니다.</b></span> <br>
+                <span><a href=""><b class="fontSize1">블루보틀 소개</b></a></span>
+            </div>
+        </div>
+    </body>
+    <footer class="footer1">
+        <span>CONNECT WITH US</span><br>
+        <div class="footerDiv1">
+            <a href=""><img width="30"
+                src="../image/insta.png" alt=""></a>
+            <a href=""><img width="22"
+                src="../image/facebook.png" alt=""></a>
+                
+        </div>
+        
+    </footer>
+</body>
+</html>

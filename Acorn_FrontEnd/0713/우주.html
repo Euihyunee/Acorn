@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 500px;
+            margin: 0 auto;;
+        }
+        .spaceDiv{
+            width: 300px;
+            height: 150px;
+            margin-top: 30px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border: 1px solid red;
+            padding-top: 30px;
+            margin-bottom: 10px;
+        }
+        .space1Div{
+            width: 300px;
+            height: 80px;
+            background-color: lightgrey;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 1px solid red;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .space2Div{
+            width: 300px;
+            height: 150px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border: 1px solid red;
+            background-color: lightgrey;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        table,th,td{
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="spaceDiv">
+        <h1>우주</h1>
+        우주란 행성, 별, 은하계 그리고 모든 형태의 물질과 에너지를 포함한 모든
+        시공간과 그 내용물 모두를 통들어 이른다.
+    </div>
+    <div class="space1Div">
+        은하계 <br>
+        은하는 우주를 구성하고 있는 단위의 하나로, 수천억 개 이상의 별
+    </div>
+    <div class="space2Div">
+        <table>
+            <tr>
+                <th>행성</th>
+                <th>탈출 속력 U<sub>esc</sub> (km/s)</th>
+            </tr>
+            <tr>
+                <th>수성</th>
+                <th>4.3</th>
+            </tr>
+            <tr>
+                <th>금성</th>
+                <th>10.3</th>
+            </tr>
+            <tr>
+                <th>지구</th>
+                <th>11.2</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

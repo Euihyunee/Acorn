@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <form action="">
+        <fieldset>
+            <legend>수강신청인</legend>
+            <ul>
+                <li>
+                    <label for="id">학번</label>
+                    <input type="text" id="id" autofocus>
+                </li>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="class">학과</label>
+                    <select name="" id="class" size="3" multiple>
+                        <!-- multiple : cirl 누르면서 드롭다운 메뉴에 있는 여러 항목 선택 -->
+                        <!-- size : 화면에 표시될 드롭다운 항목 개수 지정 -->
+                        <!-- optgroup : label 속성을 이용해 그룹의 제목을 붙인다 -->
+                        <optgroup label="공과대학">
+                            <option value="archi">건축학과</option>
+                            <option value="meca">기계공학과</option>
+                            <option value="indust">산업공학과</option>
+                            <option value="elec">전기전자공학과</option>
+                            <option value="computer" selected>컴퓨터공학과</option>
+                            <option value="chemical">화학공학과</option>
+                        </optgroup>
+                        <optgroup label="체육대학"> 
+                            <option value="tabletennice">탁구</option>
+                            <option value="tennice">테니스</option>
+                            <option value="football">미식축구</option>
+                            <option value="baseball">야구</option>
+                            <option value="bedminten">배드민턴</option>
+                            <option value="basketball">농구</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+            
+        </fieldset>
+        <fieldset>
+            <legend>학습 단계 선택</legend>
+            <ul>
+                <li><label for="grade">학년 선택</label>
+                <select name="" id="grade" size="5" multiple>
+                    <optgroup label="초등학생">
+                        <option value="c_one">초등부1</option>
+                        <option value="c_two">초등부2</option>
+                        <option value="c_three">초등부3</option>
+                        <option value="c_four">초등부4</option>
+                        <option value="c_five">초등부5</option>
+                        <option value="c_six">초등부6</option>
+                    </optgroup>
+                    <optgroup label="중학생">
+                        <option value="m_one">중등부1</option>
+                        <option value="m_two" selected>중등부2</option>
+                        <option value="m_three">중등부3</option>
+                    </optgroup>
+                     <optgroup label="고등학생">
+                        <option value="h_one">고등부1</option>
+                        <option value="h_two">고등부2</option>
+                        <option value="h_three">고등부3</option>
+                     </optgroup>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

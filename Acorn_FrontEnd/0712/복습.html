@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문서 작성하기</title>
+    <style>
+        .container{
+            width: 400px;
+            margin: 0 auto;
+        }
+        .title{
+            font-weight: bold;
+            width: 100px;
+            float: left; /* 왼쪽부터 배치 */
+        }
+        th{
+            width: 100px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin-bottom: 6px;
+        }
+        fieldset{
+            margin: 15px 10px;
+        }
+        .centered { /* class=centered인 div에 적용할 스타일  */
+            text-align: center; /* 가운데 정렬 */
+        }
+        legend{ /* 필스셋의 제목 */
+            font-weight: bold; /* 굵은 글자 */
+            font-size: 20px; /* 글자 크기 20px */
+            color: blueviolet; /* 글자 색 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>상품 주문서</h1>
+        <form action="">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <table>
+                    <tr>
+                        <th>
+                            <label for="user_id">이름</label>
+                        </th>
+                        <td>
+                            <input type="text" id="user_id" placeholder="여백없이 입력">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="user_tel">연락처</label>
+                        </th>
+                        <td>
+                            <input type="tel" id="user_tel" placeholder="연락가능한 번호">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>배송지 정보</legend>
+                <table>
+                    <tr>
+                        <th>
+                            <label for="user_addr" class="title">주소</label>
+                        </th>
+                        <td>
+                            <input type="text" id="user_addr" size="30">    
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="user_phone" class="title">전화번호</label>
+                        </th>
+                        <td>
+                            <input type="phone" id="user_phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="user_comment" class="title">메모</label>
+                        </th>
+                        <td>
+                            <textarea name="" id="" cols="28" rows="3"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>주문 정보</legend>
+                <ul>
+                    <li><label><input type="checkbox">과테말라 안티구아 (100g) </label>
+                        <label for=""><input type="number" value="0" max="5" min="0">개</label></li>
+                    <li><label><input type="checkbox">인도네시아 만델링 (100g)</label>
+                        <label for=""><input type="number" value="0" max="5" min="0">개</label></li>
+                    <li><label for=""><input type="checkbox">탐라는도다(블랜딩) (100g)</label>
+                        <label for=""><input type="number" value="0" max="5" min="0">개</label></li>
+                </ul>
+            </fieldset>
+
+            <div class="centered">
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시작성">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

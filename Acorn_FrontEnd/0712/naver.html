@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+      </style>
+    <style>
+        *{
+            margin: 1px 0px;
+        }
+        .container{
+            width: 400px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+            border: 1px solid #ccc;
+        }
+        li{
+            margin: 5px;
+        }
+        .title{
+            font-weight: bold;
+            display: inline;
+        }›
+        a{
+            display: inline-block;
+        }
+        body{
+            font-family: 'Nanum Myeongjo', serif;;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+
+        <fieldset>
+            <img width="400"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIn1yKNhYS5spO0b7zYPq_DvHx75za4NIUQw&usqp=CAU" 
+            alt="">
+    
+
+
+            <ul>
+                <li>
+                    <span><label class="title" for="user_id">아이디</label></span>
+                    <input type="text" id="user_id">
+                </li>
+                <li>
+                    <span></span><label class="title" for="user_pwd">비밀번호</label>
+                    <input type="password" id="user_pwd">
+                </li>
+                <li>
+                    <span> <label class="title" for="pwd_check">비밀번호 재확인</label>
+                    <input type="password" id="pwd_check">
+                </li>
+                <li>
+                    <span></span><label class="title" for="user_name">이름</label>
+                    <input type="text" id="user_name">
+                </li>
+                <li>
+                    <span></span><label class="title" for="birthday">생년월일</label><br>
+                    <input type="date" id="birthday">
+                </li>
+                <li>
+                    <span></span><label class="title" for="gender">성별</label><br>
+                    <input type="checkbox" id="gender"> 남자
+                    <input type="checkbox" id="gender"> 여자
+                    <input type="checkbox" id="gender"> 선택안함
+                </li>
+                <li>
+                    <span> <label class="title" for="email">본인 확인 이메일(선택)</label>
+                    <input type="email" id="email" placeholder="직접입력">
+                </li>
+                <li>
+                    <label class="title" for="tel">휴대전화</label>
+                    <select name="" id="">
+                        <option value="">대한민국 +82</option>
+                        <option value="">울산 +052</option>
+                        <option value="">서울 +02</option>
+                        <option value="">시흥 +031</option>
+                        <option value="">부산 +053</option>
+                        <option value="">경주 +051</option>
+                    </select>
+                    <br>
+                    <input type="tel" id="tel" placeholder="전화번호 입력">
+                    <input type="submit" value="인증번호 받기">
+                </li>
+                <li>
+                    <label for="check_tel">
+                        <input type="text" id="check_tel" placeholder="인증번호를 입력하세요">
+                    </label>
+                </li>
+                <li><input type="submit" value="가입하기"></li>
+            </ul>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">책임의 한계와 법적고지</a> 
+            <a href="#">회원정보 고객센터</a>
+            <a href="#">NAVER Corp.</a>
+        </fieldset>
+        
+    </div>
+    
+</body>
+</html>

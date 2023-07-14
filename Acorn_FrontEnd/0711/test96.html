@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border:1p splid #ccc;
+            border-collapse: collapse;
+        }
+        th{
+            padding:15px;
+        }
+        tr > td:nth-child(odd){
+            width:120px;
+        }
+        tr > td:nth-child(even){
+            width:300px;
+        }
+        </style>
+</head>
+<body class="center">
+    <style>
+        table{
+            width: 500px;
+        }
+        th, td{
+            width: 30px;
+        }
+        textarea{
+            text-align: center;
+        }
+        
+    </style>
+    <style>
+        .center {display: table; margin-left: auto; margin-right: auto;}
+    </style>
+
+</head>
+<body>
+    <h2 >상품 구성</h2>
+
+    <table border="" class="center">
+        <caption>실속형과 고급형 상품 구성</caption>
+        <colgroup>
+            <col style="background-color:#eee;">
+            <col>
+            <col span="2" style="width: 150px;">
+        </colgroup>
+        <thead>
+            <tr>
+                <td><b>용도</b></td> <td><b>중량</b></th> <td><b>개수</b></td> <td><b>가격</b></td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">실속형</td> <td>3kg</td> <td>11~16</td> <td>17,000won</td>
+            </tr>
+            <tr>
+                <td>5kg</td> <td>18~25</td> <td>25,000won</td>
+            </tr>
+            <tr>
+                <td rowspan="2">고급형</td> <td>3kg</td> <td>11~16</td> <td>28,000won</td>
+            </tr>
+            <tr>
+                <td>5kg</td> <td>18~25</td> <td>47,000won</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</body>
+</html>

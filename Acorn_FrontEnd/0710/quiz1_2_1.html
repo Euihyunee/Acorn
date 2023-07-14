@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1-2-1 테이플 표 만들기</title>
+    <style>
+        table, th, td {
+            border:1p splid #ccc;
+            border-collapse: collapse;
+        }
+        th{
+            padding:15px;
+        }
+        tr > td:nth-child(odd){
+            width:120px;
+        }
+        tr > td:nth-child(even){
+            width:300px;
+        }
+        </style>
+</head>
+<body class="center">
+    <style>
+        table{
+            width: 500px;
+        }
+        th, td{
+            width: 30px;
+        }
+        textarea{
+            text-align: center;
+        }
+        
+    </style>
+    <style>
+        .center {display: table; margin-left: auto; margin-right: auto;}
+    </style>
+
+        <h1>상품 구성</h1>
+        <p>실속형과 고급형 상품 구성</p>
+    </dl>
+
+    <table border="" class="center">
+        <thead>
+            <tr>
+                <td><b>용도</b></td> <td><b>중량</b></th> <td><b>개수</b></td> <td><b>가격</b></td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">실속형</td> <td>3kg</td> <td>11~16</td> <td>17,000won</td>
+            </tr>
+            <tr>
+                <td>5kg</td> <td>18~25</td> <td>25,000won</td>
+            </tr>
+            <tr>
+                <td rowspan="2">고급형</td> <td>3kg</td> <td>11~16</td> <td>28,000won</td>
+            </tr>
+            <tr>
+                <td>5kg</td> <td>18~25</td> <td>47,000won</td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+    <h2>셀 합치기 연습</h2> 
+    <table border="">
+        <thead>
+            <tr>
+                <td><b>이름</b></td> <td>정의현</td> <td><b>연락처</b></td> <td>010-6648-5205</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>주소</td> <td colspan="3">경기도 시흥시 옥구공원로 189 로얄퍼스트빌 612호</td>
+            </tr>
+            <tr>
+                <td>공부하는 것</td> <td colspan="3">Spring / vue.js / Web / HTTP 
+                    / ETC.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
