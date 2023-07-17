@@ -1,0 +1,36 @@
+.header1{
+    width: 720px;
+    background-color: aquamarine;
+}
+.ulheader{
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+}
+li{
+    display: inline;
+    text-decoration: none;
+    margin: 10px;
+}
+a:link{ /* 방문하지 않은 링크 선택  */
+    color: azure;
+    text-decoration: none;
+}
+a:visited{ /*  방문한 링크 */
+    color: black;
+}
+a:hover{ /*  마우스 올림 */ 
+    color: lightblue;
+    text-decoration: none;
+}
+a:focus{ /* 포커스를 받았을 때 (탭 키 눌러서 선택)  */
+    color: hotpink;
+}
+a:active{ /*  활성 링크 선택(클릭해서 이동하는 순간 */
+    background-color: lightblue;
+}
+.menu{
+    display: block;
+    position: absolute;
+    left: 10px;
+}

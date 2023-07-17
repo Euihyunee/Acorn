@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접 형제 선택자 +</title>
+    <style>
+        div + p{ 
+            /* div 요소 바로 다음 (next) p형제 요소만 선택 */
+            /* div 요소의 형제인 p요소 중에서 첫 번째 p요소 */
+            background-color: lightblue;
+        }
+        h2 + p{
+            /* h2 요소의 형제인 p요소 중에서 첫 번째 p요소 */
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택자 Selector 스타일 Style지정</h1>
+    <p>프론트 엔드</p>
+    <div>
+        <h1>선택자 스타일 지정</h1>
+        <h2>웹표준 웹접근성 크로스브라우징</h2>
+        <p>웹 디자이너</p>
+        <p>웹 퍼블리셔</p>
+        <p>프론트 엔드</p>
+    </div>
+    <p>웹 디자이너</p>
+    <p>웹 퍼블리셔</p>
+    <p>프론트 엔드</p>
+</body>
+</html>

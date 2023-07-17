@@ -1,9 +1,11 @@
 /* 상단바 */
+body{
+    margin: 0;
+}
 
 .menu * {
     display: inline;
 }
-
 .menu li {
     margin: 35px;
 }

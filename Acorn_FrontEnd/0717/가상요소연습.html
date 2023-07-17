@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소 연습</title>
+    <style>
+        .boxBefore::before{
+            background-color: rgb(162, 107, 162);
+            content: "주문폭주";
+        }
+        .boxAfterHot::after{
+            background-color: red;
+            content: "Hot!";
+            color: aliceblue;
+        }
+        .boxAfterBoom::after{
+            background-color: greenyellow;
+            content: " 품절";
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>제품 목록</h1>
+        <ul>
+            <li class="boxBefore"> 제품 A</li>
+            <li>제품 B</li>
+            <li>제품 C</li>
+            <li class="boxAfterHot">제품 D </li>
+            <li>제품 E</li>
+            <li class="boxBefore"> 제품 F</li>
+            <li>제품 G</li>
+            <li class="boxAfterBoom"> 제품 H </li>
+            <li class="boxAfterBoom"> 제품 I </li>
+            <li>제품 J</li>
+        </ul>
+    </div>
+</body>
+</html>
