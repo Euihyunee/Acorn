@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/p_index.css">
+    <script>
+        window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+    </script>
+</head>
+<body>
+    <header>
+        <span class="header_img">
+            <img src="../image/postrofit.png"  width="50px">
+        </span>
+        <nav class="header_nav">
+          <span>Home</span>
+          <span>Resume</span>
+          <span>Portforilo</span>
+          <span>Githhub</span>
+          <span>Blog</span>
+        </nav>
+
+        <div class="dropdown">
+            <button class="drop_button">
+                <img src="../image/pngegg.png" width="30px" alt="">
+            </button>
+            <div class="dropdown-content">
+                <a href="#">portforilo</a>
+                <a href="#">portforilo</a>
+                <a href="#">portforilo</a>
+                <a href="#">portforilo</a>
+            </div>  
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="m_1">
+            <h1>정의현</h1>
+        </div>
+        <div class="m_2">
+            <h2>Web BackEnd Developer</h2>
+        </div>
+        <div class="m_3">
+            <img src="../image/background960_2.jpg" width="100%" alt="">
+        </div>
+        <div class="m_4">
+            <div class="m_4_1">
+                👋
+            </div>
+            <div class="m_4_2">
+                안녕하세요. 웹 백엔드 개발자를 꿈꾸는 정의현입니다. <br>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
