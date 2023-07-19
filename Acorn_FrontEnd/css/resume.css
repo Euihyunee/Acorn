@@ -115,99 +115,110 @@ main {
 }
 
 /* 여기까지 header */
-  
 
 main{
-    padding-top: 80px;
+    padding-top: 40px;
     width: 700px;
     margin: 0 auto;
     padding-bottom: 75px;
 }
+main > div{
+    margin-top: 60px;
+}
+.m_1{
+    margin-bottom: 30px;
+}
 .m_2{
-    margin-top: 20px;
-}
-.m_4{
-    margin-top: 10px;
-    height: 80px;
-    border: 1px solid lightgray;
+    width: 600px;
     display: flex;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    padding: 0 0 ;
 }
-.m_4_1{
-    padding: 10px 10px;
-    width: 10%;
-    float: left;
-    text-align: right;
-    
+.m_2_1{
+    width: 45%;
 }
-.m_4_2{
-    width: 90%;
-    padding: 10px 10px;
-    float: right;
-    text-align: left;
+.m_2_1 > img {
+    border-radius: 50%;
 }
-.introduce{
-    margin-top: 40px;
-    margin-bottom: 60px;
+.m_2_2{
+    width: 5%;
 }
-.m_5_button{
-    padding: 1px;
-    background-color: white;
-    border-bottom: solid 3px black;  
-    font-size: 14px;
+.m_2_3{
+    width: 50%;
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 20px;
 }
-.m_5_button:hover{
-    background-color: whitesmoke;
+.m_2_3 > h2{
+    color: orange;
 }
-.m_6{
-    display: flex;
-    justify-content: space-between;
+.m_2_3 > a{
+    text-decoration: none;
+    color: rgb(108, 108, 108);
 }
-.m_6 > div{
-    width: 48%;
-    height: 100px;
-    margin: 5px;
-    border-radius: 10px;
+main > div > h2{
+    color: orange;
+    font-size: 32px;
+}
+.m_3{
+    margin-top: 60px;
+}
+
+.project_introduce{
+    border: 0.8px solid lightgray;
+    text-align: center;
+    font-size: 18px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-
+    margin-bottom: 40px;
 }
-.m_6 > div a{
+.project_main{
+    display: flex;
+    justify-content: space-between;
+}
+.project_left{
+    width: 200px;
+    float: left;
+    text-align: left;
+}
+.project_right{
+    display: block;
+    width: 400px;
+    float: left;
+    align-items: center;
+}
+.project_right ul li a{
     text-decoration: none;
-    color: white ;
-    font-size: 30px;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    font-weight: bold;
+    color: rgb(142, 141, 141);
 }
-.m_6_1{
-    background-color: rgb(0, 158, 113);
+.project_right ul li{
+    margin: 5px 3px;
 }
-.m_6_2{
-    background-color: orange;
+.project_right ul li span{
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    background: rgba(135,131,120,0.15);
+    line-height: normal;
+    font-size: 14px;
 }
-.m_6_2 > div a{
-    color: white;
-    font-size: 30px;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    font-weight: bold;
+.fe_color{
+    color: rgb(105, 64, 165);
 }
-.m_7 > div{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    padding: 3px 20px;
-    font-size: 16px;
-    color: inherit;
+.be_color{
+    color: rgb(81, 194, 81);
 }
-.m_8{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.tool_color{
+    color: rgb(77, 188, 232);
 }
-.m_8 > div{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    padding: 3px 20px;
-    font-size: 16px;
-    color: inherit;
+.m_5 span{
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    background: rgba(135,131,120,0.15);
+    line-height: normal;
+    font-size: 14px; 
+    margin: 2px;
+    line-height: 30px;
 }

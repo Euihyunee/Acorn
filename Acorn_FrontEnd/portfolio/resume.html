@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/resume.css">
+    <script>
+        window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+    </script>
+</head>
+<body>
+    <header>
+        <span class="header_img">
+            <a href="index.html">
+                <img src="../image/house-solid.svg" width="40px">
+            </a>
+        </span>
+        <nav class="header_nav">
+          <a href="index.html"><span>Home</span></a>
+          <a href="resume.html"><span>Resume</span></a>
+          <a href=""><span>Portforilo</span></a>
+          <a href="https://github.com/Euihyunee" target="_blank"><span>Githhub</span></a>
+          <a href="https://euihyunee.github.io/" target="_blank"><span>Blog</span></a>
+        </nav>
+
+        <div class="dropdown">
+            <button class="drop_button">
+                <img src="../image/pngegg.png" width="30px" alt="">
+            </button>
+            <div class="dropdown-content">
+                <a href="#">portforilo</a>
+                <a href="#">portforilo</a>
+                <a href="#">portforilo</a>
+                <a href="#">portforilo</a>
+            </div>  
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="m_1">
+            <h1>정의현 | Resume</h1>
+        </div>
+        <div class="m_2">
+            <div class="m_2_1">
+                <img src="../image/resumeF.jpeg" width="100%" alt="">
+            </div>
+            <div class="m_2_2">
+
+            </div>
+            <div class="m_2_3">
+                <h2>☎️ Contact</h2>
+                📧Email. <a href="matilto:hey.lobil7782@gmail.com">lobil7782@gmail.com</a>
+                <br>
+                📱Phone. <a href="tel:01066485205">010-6648-52505</a>
+                <br>
+                
+                <h2>✠ Channel</h2>
+                <img src="../image/git.png" width="16px" alt="">
+                Github. <a href="https://github.com/Euihyunee">github.com/Euihyunee</a>
+                <br>
+                <img src="../image/git.png" width="16px" alt="">
+                GitBlog. <a href="https://euihyunee.github.io/">euihyunee.github.io</a>
+            </div>
+        </div>
+        <hr style="border: 0.8px solid; ">
+        <div class="m_3">
+            <h2>🖍️ Introduce </h2>
+            <hr style="border: 1.3px solid black; margin-bottom: 20px;">
+            안녕하세요. 성장하는 개발자 정의현입니다. <br><br><br>
+            저는 대학 생활동안 사람들과 함께 프로젝트를 하며 실력향상을 도모하였습니다. <br>
+            주로 스프링을 이용한 백엔드를 맡았으며 요청 부분을 받아와 내부 비지니스 로직을 처리하는 
+            역활을 담당했습니다. <br><br><br>
+            또한 Spring 프레임워크 강의, 유튜브, 블로그 등 관련 사이트들을 참조하며 점진적으로 
+            역량을 쌓아왔습니다. <br><br><br>
+            에러사항 및 궁금한 점이 생길 경우 팀원들과 이를 공유하고 의견을 주고받았으며
+            문제 해결을 위해 많은 노력을 들였습니다. <br><br><br>
+            그리고 학습을 하면서 나온 궁금점과 해결점들을 메모로 기록하고 
+            블로그를 통해 기록을 남기고 있습니다.
+            <hr style="border: 0.8px solid; ">
+        </div>
+        <div class="m_4">
+            <h2>📑 Project</h2>
+            <hr style="border: 1.3px solid black; margin-bottom: 20px;">
+            <div class="project">
+                <h3>📎. TFT_Statistics</h3>
+                <div class="project_introduce">
+                    ☑️. 라이엇 API 기반으로 다양한 롤토체스 통계를 보여주는 서비스
+                </div>
+                <div class="project_main">
+                    <div class="project_left">
+                        <h4>팀 프로젝트</h4>
+                    </div>
+                    <div class="project_right">
+                        <ul>
+                            <li>프론트엔드2명, 백엔드2명</li>
+                            <li>프론트엔드 개발, 백엔드 개발, DB설계</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="border: 0.8px solid lightgray;">
+                <div class="project_main">
+                    <div class="project_left">
+                        <h4>프로젝트 결과물</h4>
+                    </div>
+                    <div class="project_right">
+                        <ul>
+                            <li><a href="https://github.com/Euihyunee/TFT_Statistics">📎. BE-GitHub</a></li>
+                            <li><a href="https://github.com/nulzi/MaroMaro">📎. FE-GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="border: 0.8px solid lightgray;">
+                <div class="project_main">
+                    <div class="project_left">
+                        <h4>기술스택</h4>
+                    </div>
+                    <div class="project_right">
+                        <ul>
+                            <li>
+                                <span class="fe_color">Vue.js</span>
+                                <span class="fe_color">JavaScript</span>
+                                <span class="fe_color">Bootstrap</span>
+                            </li>
+                            <li >
+                                <span class="be_color">Spring</span>
+                                <span class="be_color">Java</span>
+                                <span class="be_color">MariaDB</span>
+                            </li>
+                            <li>
+                                <span class="tool_color">Jira</span>
+                                <span class="tool_color">SourceTree</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="border: 0.8px solid lightgray;">
+                <div class="project_main">
+                    <div class="project_left">
+                        <h4>BE 구현한 기능</h4>
+                    </div>
+                    <div class="project_right">
+                        <ul>
+                            <li>Rest API 개발</li>
+                            <li>데이터베이스 설계</li>
+                            <li>MVC 구조 설계</li>
+                            <li>전적 검색</li>
+                            <li>통계 데이터 분석(스케쥴러)</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="border: 0.8px solid lightgray;">
+                <div class="project_main">
+                    <div class="project_left">
+                        <h4>FE 구현한 기능</h4>
+                    </div>
+                    <div class="project_right">
+                        <ul>
+                            <li>사용자 페이지 구현</li>
+                            <li>Traits, Rank로 필터 가능 및 초기화 기능</li>
+                            <li>Apex Chart 그래프로 통계 표시</li>
+                            <li>Hover/Click 항목에 적용</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="border: 0.8px solid lightgray;">
+            </div>
+        </div>
+
+        <div class="m_5">
+            <h2>⚙️ Skill</h2>
+            <hr style="border: 1.3px solid black; margin-bottom: 20px;">
+            <span class="fe_color">JavaScript</span>
+            <span class="fe_color">HTML</span>
+            <span class="fe_color">CSS</span><br>
+            <span class="be_color">Spring</span>
+            <span class="be_color">Java</span>
+            <span class="be_color">JSP</span><br>
+            <span class="tool_color">Jira</span>
+            <span class="tool_color">Git</span>
+            <span class="tool_color">SourceTree</span>
+            <hr style="border: 0.8px solid lightgray;">
+        </div>
+    </main>
+</body>
+</html>

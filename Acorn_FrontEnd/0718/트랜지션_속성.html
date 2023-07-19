@@ -6,13 +6,34 @@
     <title>Document</title>
     <style>
         .box1{
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            border: 1px solid;
             
+            /*트랜지션 대상 선택*/
+            transition-property: width, height;
+
+            /* 지연시간 */
+            transition-delay: 1s;
+
+            /* 실행시간 너비2s, 높이1s */
+            transition-duration: 2s, 1s;
+
+            /* 속도 곡선 */
+            transition-timing-function: ease-in;
         }
         .box1:hover{
-            
+            width: 300px;
+            height: 270px;
         }
         .box2{
-            
+            margin: 100px;
+            width: 150px;
+            height: 150px;
+            background-color: orangered;
+            border: 1px solid black;
+            transition: 2s ease-in-out;
         }
         .box2:hover{
             width: 250px;
@@ -33,8 +54,21 @@
             border-radius: 10px;
         }
         #ex:hover div{
-            
+            height: 400px;
         }
+        #ex .ease{
+            transition: 2s ease;
+        }
+        #ex .linear{
+            transition: 2s linear;
+        }
+        #ex .ease-in{
+            transition: 2s ease-in;
+        }
+        #ex .ease-in-out{
+            transition: 2s ease-in-out;
+        }
+        /* cubic-bezier(n,n,n,n) : 배지 함수 정의 n값을 1~10까지 사용  */
     </style>
 </head>
 <body>
