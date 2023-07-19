@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .origin{
+            width: 150px;
+            height: 180px;
+            float: left;
+            margin: 30px;
+        }
+        img{
+            width: 150px;
+            height: 180px;
+        }
+        .rotatex:hover{
+            transform: rotateX(50deg);
+        }
+        .rotatey:hover{
+            transform: rotateY(50deg);
+        }
+        #pers{
+            perspective: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <img src="../image/lolchess.png"  alt="">
+    </div>
+    <div class="origin"> 
+        <!-- 오리지널 사진 -->
+        <div class="rotatex">
+            <!-- 부모요소에서 효과준다 -->
+            <img src="../image/lolchess.png" alt="">
+        </div>
+    </div>
+    <div class="origin"> 
+        <!-- 오리지널 사진 -->
+        <div class="rotatey">
+            <!-- 부모요소에서 효과준다 -->
+            <img src="../image/lolchess.png" alt="">
+        </div>
+    </div>
+    <div class="origin" id="pers"> 
+        <!-- 원근감 -->
+        <div class="rotatex">
+            <!-- 부모요소에서 효과준다 -->
+            <img src="../image/lolchess.png" alt="">
+        </div>
+    </div>
+    <div class="origin" id="pers"> 
+        <!-- 원근감 -->
+        <div class="rotatey">
+            <!-- 부모요소에서 효과준다 -->
+            <img src="../image/lolchess.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

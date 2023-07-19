@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .slide_wrap{
+            height: 350px;
+            width: 100%;
+            overflow: hidden;
+            /* 넘치는 부분을 가려줌 */
+        }
+        ul{
+            width: 4000px;
+            height: 5000px;
+            list-style: none;
+            animation: slideAni 8s infinite alternate ease-in-out;
+            position: relative;
+        }
+        @keyframes slideAni{
+            0%{
+                left:0;
+            }   
+            25%{
+                left: -1000px;
+            }
+            50%{
+                left: -2000px;
+            }
+            75%{
+                left: -3000px;
+            }
+            100%{
+                left: 0;
+            }
+        }
+        li{
+            width: 1000px;
+            height: 500px;
+            float: left;
+        }
+        li:nth-child(1){
+            background: url(../image/background960_1.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        li:nth-child(2){
+            background: url(../image/background960_2.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        li:nth-child(3){
+            background: url(../image/background960_3.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        li:nth-child(4){
+            background: url(../image/background960_4.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="slide_wrap">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
