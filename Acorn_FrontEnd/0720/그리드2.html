@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+        .parentes1{
+            display: grid;
+            /* 화면을 꽉 채울 만큼 컬럼 너비를 늘려서 표시 */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            margin-bottom: 20px;
+        }
+        .parentes2{
+            display: grid;
+            /* 칼럼 최소 너비 만큼만 채워서 표시 */
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            margin-bottom: 20px;
+        }
+        .box{
+            padding: 15px;
+        }
+        .box:nth-child(odd){
+            background-color: lightpink;
+        }
+        
+        .box:nth-child(even){
+            background-color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3> auto-fit일 때</h3>
+    <p>화면이 넓을 때에는 남는 공간 없이 꽉 채워서 컬럼 표시</p>
+    <div class="parentes1">
+        <div class="box">그리드 1차원, 그리드 1차원, 그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,</div>
+        <div class="box">box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box </div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box </div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box box box box box box box box box box box box box box box box box box box box </div>
+        <div class="box">box10</div>
+    </div>
+
+
+    <h3> auto-fill일 때</h3>
+    <p>칼럼의 최소 너비 (200px)만 남기고 </p>
+    <div class="parentes1">
+        <div class="box">그리드 1차원, 그리드 1차원, 그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,그리드 1차원, 그리드 1차원,</div>
+        <div class="box">box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box </div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box boxbox box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box box </div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box box box box box box box box box box box box box box box box box box box box </div>
+        <div class="box">box10</div>
+    </div>
+</body>
+</html>
