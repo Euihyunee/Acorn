@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .detail{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="item">
+        <img width="400px" height="400px"
+        src="https://species.nibr.go.kr/UPLOAD/digital/species/120000065450/BIMGVP0000006320.jpg" alt="">
+        <button class="over" id="open" onclick="showDetail()">상세 설명 보기</button>
+        <div id="desc" class="detail">
+            <h4>등심붓꽃</h4>
+            <p>북미 원산으로 길가나 잔디밭에 자라는 여러해살이풀이다. 
+                줄기는 높이 20~30cm 곧추서며, 납작하고, 아래쪽에 좁은 날개가 2개 있다. 
+                잎은 줄기 아래쪽에 여러 장이 어긋나며, 납작한 선형이고 끝이 뾰족하다. 
+                꽃은 푸른 보라색 또는 하얀 보라색으로 4~6월에 피며 줄기 끝에 3~6개가
+                 산형꽃차례를 이룬다. 꽃의 지름은 1~1.5cm이다. 포는 2장이며 피침형이다. 
+                 화피는 종 모양이며 깊게 6갈래로 갈라진다. 열매는 삭과이며 둥글고, 밑을 향한다. 
+                 우리나라 남부지방과 제주도에 귀화되어 분포한다. 일본에도 귀화종으로 분포한다. 
+                 <br>[저작재산권자]
+            </p>
+            <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+        </div>
+    </div>
+
+    <script>
+        function showDetail(){
+            document.querySelector('#desc').style.display = "block";
+            document.querySelector('#open').style.display = "none";
+        }
+        function hideDetail(){
+            document.querySelector('#desc').style.display = "none";
+            document.querySelector('#open').style.display = "";
+
+        }
+    </script>
+</body>
+</html>

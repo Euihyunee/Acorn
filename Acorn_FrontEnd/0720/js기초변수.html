@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 변수 문자형 String에 대해서...
+       var a = "javascript" ;
+       var num = "100";
+       var tag = "<h1> String</h1>" ;
+       
+       console.log(a);
+       console.log(num);
+       console.log(tag);
+        
+    //    document.write(a);
+    //    document.write(num);
+    //    document.write(tag);
+
+        // 변수 숫자형 number
+        var s = 100;
+        var t = Number("500");  // 형변환
+        console.log(s);
+        console.log(t);
+
+        // 변수 논리형 boolean
+        var y = true;
+        var t = 10>= 100;
+        var k = Boolean("hello");
+        console.log(y);
+        console.log(t);
+        console.log(k);
+        var m = Boolean(0);
+        var k = Boolean("홍길동");
+        console.log(m);
+        console.log(k);
+
+        // null과 undefined 데이터
+        // undefined 자료가 정의(할당)되지 않았을 때 데이터 상태
+        // null 데이터 갑시 유효하지 않은 상태(값이 비어있다.)
+        // 숫자 0은 null이 아님
+
+        var sol; //변수명만 선언된 상태 -> undefined 나옴
+        console.log(sol);
+        var tol ="hello";
+        console.log(tol);
+
+        // typeof 
+        var num = 100;
+        var str = "자바스크립트";
+        console.log(typeof num);
+        console.log(typeof tol);
+        document.write(typeof num, "<br>");
+        document.write(typeof str, "<br><br><br>");
+
+        // 연산자 
+        var num1 = 15;
+        var num2 = 2;
+        var result;
+        result = num1 + num2;
+        document.write(result, "<br>");
+
+        // 퀴즈!!  복합연산자 표 만들기
+        var str = "<table border='1px solid lightgray'>";
+            str += "<tr>";
+            str += "<th>test1</th><th>test2</th><th>test3</th>"
+            str +="</tr>";
+
+            str += "<tr>";
+            str += "<th>test1</th><th>test2</th><th>test3</th>"
+            str +="</tr>";
+            
+            str += "<tr>";
+            str += "<th>test1</th><th>test2</th><th>test3</th>"
+            str +="</tr>";
+            
+            document.write(str);
+    </script>
+    <!-- body 부분 끝나기 전에 script를 쓴다. -->
+    <!-- body 부분이 먼저 실행된 후에 자바스크립트를 실행됨. -->
+</body>
+</html>

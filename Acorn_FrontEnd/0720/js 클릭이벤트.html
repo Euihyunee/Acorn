@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline;
+            border: dashed 2px gray;
+            padding: 0 20px;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+        #result{
+            border: solid 1px black;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            position: relative;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- onclick : 클릭하면 changeBg()를 실행하겠다라는 말임 -->
+        <li><a href="#" onclick="changeBg('green')">Green</a></li>
+        <li><a href="#" onclick="changeBg('Orange')">Orange</a></li>
+        <li><a href="#" onclick="changeBg('Purple')">Purple</a></li>
+    </ul>
+    <!-- 결과 창  -->
+    <div id="result"></div>
+    <script>
+        function changeBg(color){
+            let result = document.querySelector('#result');
+            result.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
