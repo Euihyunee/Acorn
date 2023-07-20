@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .parentes{
+            display: grid;
+            /* grid-template-columns: repeat(4,25%);  */
+            grid-template-columns: 1fr 1fr 2fr; 
+            /* grid-template-columns: 1fr 1fr 1fr; 1대 1대 1배 */
+            /* fr : fraction : 부분, 일부, 분수 */
+            /* 걍 넓이 비율이라 보면 됨 */
+
+            /* 모든 행 150px */
+            grid-auto-rows: 150px;
+
+            /*  */
+            grid-gap: 20px 40px;
+        }
+        .parentes div{
+            border: 1px solid black;
+        }
+        .box:nth-child(odd){
+            /* 형제 사이에 홀수 선택 */
+            background-color: lightblue;
+        }
+        .box:nth-child(even){
+            /* 형제 사이에 짝수 선택 */
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parentes">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+        <div class="box box5">box5</div>
+        <div class="box box6">box6</div>
+        <div class="box box7">box7</div>
+        <div class="box box8">box8</div>
+        <div class="box box9">box9</div>
+        <div class="box box10">box10</div>
+    </div>
+</body>
+</html>
