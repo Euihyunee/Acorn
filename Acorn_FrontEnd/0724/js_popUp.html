@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let newWin = window.open("pop12.html", "pop", "width=400, height=300,left=100, top=200");
+
+        // 팝업 차단인 경우
+        if(newWin == null){
+            alert("팝업이 차단되어 있습니다. 해제해주세요");
+        }
+        newWin.moveBy(100,100); // 팝업창 움직이기 (오른쪽 100, 아래 100)
+    </script>
+</body>
+</html>

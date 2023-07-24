@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseEvent</title>
+    <style>
+        .rect{
+            width: 200px;
+            height: 200px;
+            border: 5px solid olive;
+        }
+    </style>
+</head>
+<body>
+    <div class="rect">
+
+    </div>
+
+    <script>
+        let $rect = document.querySelector(".rect");
+        
+        // function(){} 따로 지정없이 바로 선언이 가능하다.
+        $rect.addEventListener("mouseover", function(){
+            $rect.style.backgroundColor = "green";
+            $rect.style.borderRadius = "10px";
+        });
+        $rect.addEventListener("mouseout", function(){
+            $rect.style.backgroundColor = "";
+            $rect.style.borderRadius = "";
+        });
+    </script>
+</body>
+</html>

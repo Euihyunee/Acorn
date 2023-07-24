@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle 토글 버튼 </title>
+    <style>
+        img{
+            width: 600px;
+            height: 400px;
+        }
+        #pic1{
+            display: block;
+        }
+        #pic2{
+            display: none;
+        }
+        #pic1.active{
+            display: none;
+        }
+        #pic2.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>사진 클릭 or 버튼 클릭</h2>
+    <img src="../image/background4.jpg" id="pic1" class="toggleBtn1">
+    <img src="../image/background2.jpeg" id="pic2" class="toggleBtn2" >
+    <button class="toggleBtn3">토글 버튼</button>
+    <script>
+        // 상수 선언 시에 사용 const 변하지 않는 값 
+        const $toggleBtn1 = document.querySelector(".toggleBtn1");
+        const $toggleBtn2 = document.querySelector(".toggleBtn2");
+        const $toggleBtn3 = document.querySelector(".toggleBtn3");
+        const $pic1 = document.querySelector("#pic1");
+        const $pic2 = document.querySelector("#pic2");
+
+        // add와 remove를 한번에 사용 : toggle
+        $toggleBtn1.addEventListener("click", () => {
+            // 화살표 함수. function 안쓰고 작성이 가능
+            $pic1.classList.toggle("active"); // active가 없으면 추가해주고
+            $pic2.classList.toggle("active"); // active가 없다면 빼준다.
+        });
+        $toggleBtn2.addEventListener("click", () => {
+            // 화살표 함수. function 안쓰고 작성이 가능
+            $pic1.classList.toggle("active"); // active가 없으면 추가해주고
+            $pic2.classList.toggle("active"); // active가 없다면 빼준다.
+        });
+        
+        $toggleBtn3.addEventListener("click", () => {
+            // 화살표 함수. function 안쓰고 작성이 가능
+            $pic1.classList.toggle("active"); // active가 없으면 추가해주고
+            $pic2.classList.toggle("active"); // active가 없다면 빼준다.
+        });
+    </script>
+    "<div class=" + &quot; + "gugu" + &quot; + ">"
+</body>
+</html>

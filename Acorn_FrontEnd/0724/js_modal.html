@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모달창 띄우기</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            width: 700px;
+            margin: 0 auto;
+        }
+        body{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        #open{
+            margin: 200px;
+            color: red;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            width: 200px;
+            height: 100px;
+            border-radius: 20px;
+            border: 3px solid rgb(200, 200, 0);
+            background-color: aqua;
+        }
+        #modal-box{
+            border: 1px solid;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgb(167, 167, 167);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        #modal-box.active{
+            display: flex;
+        }
+        #modal-contents{
+            width: 600px;
+            height: 300px;
+            border: 1px solid red;
+            padding: 20px;
+            display: inline-block;
+            background-color: aliceblue;
+            align-items: center;
+        }
+        #title{
+            width: 500px;
+        }
+        .profile{
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            display: flex;
+        }
+        .pImg{
+            width: 47%;
+            height: 100%;
+        }
+        .pContent{
+            width: 47%;
+            height: 100%;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 200%;
+        }
+        #close{
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            position: relative;
+            left: 80%;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="open">프로필 보기</button>
+
+    <div id="modal-box">
+        <div id="modal-contents">
+            <h2 id="title">프로필</h2>
+            <div class="profile">
+                <div class="pImg">
+                    <img src="../image/resumeF.jpeg" height="100%">
+                </div>
+                <div class="pContent">
+                    이름 : 정의현 <br>
+                    나이 : 1998.11.12 (26) <br>
+                    지역 : 경기도 시흥시 정왕 <br>
+                    기술 : Java & Spring 
+
+                </div>
+            </div>
+            
+            <button id="close">돌아가기</button>
+        </div>
+    </div>
+
+    <script>
+        const open = document.querySelector("#open");
+        const close = document.querySelector("#close");
+        const modalBox = document.querySelector("#modal-box");
+
+        open.addEventListener("click", () => {
+            // 클릭하면 클래스리스트에 .active 스타일 추가
+            modalBox.classList.add("active"); 
+        });
+        close.addEventListener("click", () => {
+            // 클릭하면 클래스리스트에 .active 스타일 추가
+            modalBox.classList.remove("active"); 
+        });
+    </script>
+</body>
+</html>
