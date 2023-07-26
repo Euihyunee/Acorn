@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 150px;
+            height: 150px;
+            background-color: palevioletred;
+            margin:  100px auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        const $box = document.getElementById("box");
+        // let $box = document.querySelector("#box");
+        
+        // mouseenter 마우스 올리면
+        box.addEventListener("mouseenter", () =>{
+            box.style.backgroundColor = "pink";
+        });
+        // mouseleave 마우스 벗어나면
+        box.addEventListener("mouseleave", () =>{
+            box.style.backgroundColor = "palevioletred";
+        });
+
+    </script>
+</body>
+</html>

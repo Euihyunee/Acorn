@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">자바 스크립트</h2>
+    <section id="wrap">
+        <article class="box1">테스트1</article>
+        <article class="box2">테스트2</article>
+        <article class="box3">테스트3</article>
+        <article class="box4">
+            <ul class="list">
+                <li class="item1">item1</li>
+                <li class="item2">item2</li>
+                <li class="item3">item3</li>
+                <li class="item4">item4</li>
+            </ul>
+        </article>
+    </section>
+
+    <script>
+        const $title = document.querySelector("#title");
+        const $wrap = document.getElementById("wrap");
+        const $items = document.querySelectorAll("article");
+        
+        // console.log($title);
+        // console.log($items);
+        // console.log($wrap);
+
+        const $list = document.querySelector(".list");
+        const listItems = $list.children;
+        const item2 = document.querySelector(".item2");
+        const li = document.querySelector("li");
+        const item3 = document.querySelector(".item3");
+
+        console.log($list);
+        console.log(listItems);
+        // 자식 요소 선택
+        console.log(listItems[0]);
+        console.log(listItems[1]);
+        console.log(listItems[2]);
+        
+        console.log("----구분점------");
+        // 부모 요소 선택
+        console.log(item2.parentElement);
+
+        
+    </script>
+</body>
+</html>

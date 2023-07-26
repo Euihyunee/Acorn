@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        document.write("<h2>함수 체크</h2>");
+
+        const hi1 = () => {return `안녕하세요`};
+        const hi2 = () => "안녕하세요";
+        document.write(hi1(), "<br>");
+        document.write(hi2(), "<br>");
+
+
+        document.write("<h2>더하기 작업</h2>");
+        let sum = function(a,b){
+            return a+b;
+        }
+        document.write(sum(2,3), "<br>");
+
+        let sum1 = (a,b) => a+b;
+        document.write(sum1(4,5), "<br>");
+
+        document.write("<h2>if조건문 연산</h2>");
+        
+        function sumMulti(x,y){
+            if ( x==y ){
+                return x * y;
+            }else{
+                return x+y;
+            }
+        }
+        document.write(sumMulti(5,10), "<br>");
+        document.write(sumMulti(5,5), "<br>");
+
+
+    </script>
+</body>
+</html>

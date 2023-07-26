@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>정수로 변환, parseFloat 실수(소수점)</h2>");
+
+        let num1 = parseInt(prompt("비교할 첫 번째 숫자 : "));
+        let num2 = parseInt(prompt("비교할 두 번째 숫자 : "));
+        // 함수 실행
+        compareTwo(num1,num2); 
+        // 함수 선언
+        function compareTwo(x,y) {
+            if(x==y){
+                alert(x+ "와(과) " + y + "는 같습니다");
+            } else if(x>y) alert(x+ "는 " + y + "보다 큽니다.");
+            else alert("${x}는 ${y}보다 작습니다.");
+        }
+    </script>
+</body>
+</html>
