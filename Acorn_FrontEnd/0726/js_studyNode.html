@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>노드 리스트</h1>
+    <pre>
+        텍스트 노드 추가하기.
+        Dom에 새로운 요소를 추가할 때는 
+        가장 먼저 요소 노드를 만들어야 한다. 
+
+        1. 요소 노드 만들기 createElement() 메서드
+        2. 텍스트 노드 만들기 createTextNode()
+        3. 자식 노드 연결하기 appendChild()
+    </pre>
+    <a href="#" id="more">more</a>
+
+    <script>
+        // 1. 요소 노드 만들기 createElement() 메서드
+        let newP = document.createElement("p");
+        //2. 텍스트 노드 만들기 createTextNude()
+        let textNode = document.createTextNode("추가될 내용 부분");
+        // 3. 자식 노드 연결하기 appendChild()
+        newP.appendChild(textNode);
+        // p요소 노드를 body 노드의 자식 노드로 추가
+        document.body.appendChild(newP);
+        newP.style.display = "none";
+
+        let $more = document.querySelector("#more");
+        $more.addEventListener("click", function(){
+            if(newP.style.display == "none"){
+                newP.style.display ='block';
+            }else{
+                newP.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
