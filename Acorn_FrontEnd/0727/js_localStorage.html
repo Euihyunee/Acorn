@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #itemList span{            
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
@@ -32,18 +38,30 @@
                 document.querySelector("#item").value ="";
                 document.querySelector("#item").focus();
             }
+            localStorage.setItem("storagelist", JSON.stringify(itemList));
             showList();
         }
         function showList(){
             let list = "<ul>";
 
             for(let i = 0; i < itemList.length; i++){
-                list += "<li>" + itemList[i] + "<span class='close'"+ i +"></span></li>";
+                list += "<li>" + itemList[i] + "<span class='close' id="+ i +">X</span></li>";
             }
             list  += "</ul>";
 
             document.querySelector("#itemList").innerHTML = list;
 
+            let remove = document.querySelectorAll(".close");
+            for(let i = 0 ; i<=remove.length; i++){
+                remove[i].addEventListener("click", removeList);
+            }
+        }
+        function removeList(){
+            let id = this.getAttribute("id");
+            itemList.splice(id,1);
+            localStorage.setItem("storagelist", JSON.stringify(itemList));
+
+            showList();
         }
     </script>
 
