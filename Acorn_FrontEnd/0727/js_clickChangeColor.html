@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>클릭해보세요</h3>
+    <h5> 할 일 목록</h5>
+    <ul>
+        <!-- 엔티티 코드 -->
+        <li><span class="check">&check;할 일 1</span></li>
+        <li><span class="check">&check;할 일 2</span></li>
+        <li><span class="check">&check;할 일 3</span></li>
+        <li><span class="check">&check;할 일 4</span></li>
+        <li><span class="check">&check;할 일 5</span></li>
+        <li><span class="check">&check;할 일 6</span></li>
+    </ul>
+    <script>
+        // All은 같은 이름의 class를 이용해서 모든 class 선택
+        let checkList = document.querySelectorAll(".check");
+        for(let i=0;i<checkList.length;i++){
+            checkList[i].addEventListener("click", function(){
+                checkList[i].parentNode.style.color = "hotpink";
+                checkList[i].parentNode.style.textDecoration = "line-through";
+            });
+        }
+    </script>
+</body>
+</html>

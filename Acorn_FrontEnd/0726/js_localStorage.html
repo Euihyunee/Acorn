@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>공부할 주제</h1>
+        <p>공부할 내용을 기록해 보세요.</p>
+
+        <form>
+            <input type="text" id="item" autofocus="true">
+            <button type="button" id="add" class="addBtn">추가하기</button>
+        </form>
+        <!-- 표시할 영역 -->
+        <div id="itemList"></div>
+    </div>
+
+    <script>
+        let itemList = [];
+
+        let addBtn = document.querySelector("#add");
+
+        addBtn.addEventListener("click", addList);
+
+        function addList(){
+            let item = document.querySelector("#item").value;
+            if(item != null){
+                itemList.push(item);
+                document.querySelector("#item").value ="";
+                document.querySelector("#item").focus();
+            }
+            showList();
+        }
+        function showList(){
+            let list = "<ul>";
+
+            for(let i = 0; i < itemList.length; i++){
+                list += "<li>" + itemList[i] + "<span class='close'"+ i +"></span></li>";
+            }
+            list  += "</ul>";
+
+            document.querySelector("#itemList").innerHTML = list;
+
+        }
+    </script>
+
+</body>
+</html>
