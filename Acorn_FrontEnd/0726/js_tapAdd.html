@@ -70,13 +70,13 @@
                 content.style.display = 'none';
             }
             // 모든 탭 버튼에서 active 클래스를 제거
-            const tabButtons = document.querySelectorAll('.tab-buttom');
+            const tabButtons = document.querySelectorAll('.tab-button');
             for(const button of tabButtons){
                 button.classList.remove('active');
             }
             // 선택한 탭 내용 보여주고 active 클래스를 추가
             document.getElementById(tabName).style.display = 'block';
-            evt.currentTarget.clsasList.add('active');
+            evt.currentTarget.classList.add('active');
         }
         // 페이지 열리면 첫 번째 탭 보이게
         document.getElementById('tab1').style.display = 'block';

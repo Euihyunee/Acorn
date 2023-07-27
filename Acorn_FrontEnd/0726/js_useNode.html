@@ -21,6 +21,7 @@
         function newRegister(){
             
             let newItem = document.createElement("li"); // 요소 노드 추가
+            newItem.style.cursor = "pointer";
             let $subject = document.querySelector("#subject"); // form의 텍스트 필드
 
             // 텍스트 필드의 값을 텍스트 노드로 만들기 
@@ -42,13 +43,11 @@
 
             // 입력된 모든 항목 가져오기 
             let items = document.querySelectorAll("li");
-            for(let i=0; i<items.length; i++){
-                items[i].addEventListener("click", function(){
-                    if(this.parentNode){ // 조건 : 부모 노드가 있다면
-                        this.parentNode.removeChild(this); // 부모 노드에서 삭제
-                    }
-                });
-            }
+            newItem.addEventListener("click", function(){
+                if(this.parentNode){ // 부모 노드가 있다면
+                    this.parentNode.removeChild(this); // 부모 노드에서 삭제
+                }
+            })
         }
         
 

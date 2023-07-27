@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            width: 400px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .grid-container {
+            margin: 10px auto;
+            width: 310px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+        }
+        .grid-item{
+            border: 1px solid;
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+            padding: 0px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+
+        }
+        .grid-item:hover{
+            opacity: 0.3;
+        }
+        .small{
+            width: 90px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .big_div{
+            margin: 0 auto;
+            width: 370px;
+            height: 370px;
+            text-align: center;
+        }
+        #big{
+            width: 360px;
+            height: 360px;
+            margin: 0 auto;
+        }
+        .more{
+            width: 310px;
+            margin: 0 auto;
+        }
+        #more-contents{
+            width: 360px;
+            margin: 0 auto;
+            display: none;
+        }
+        #moreFrame{
+            width: 400px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big_div"><img src="../image/lion1.jpeg" id="big" ></div>
+    <div class="grid-container">
+        <div class="grid-item"><img src="../image/lion1.jpeg" class="small"></div>
+        <div class="grid-item"><img src="../image/lion2.jpeg" class="small"></div>
+        <div class="grid-item"><img src="../image/lion3.jpeg" class="small"></div>
+        <div class="grid-item"><img src="../image/lion4.png" class="small"></div>
+        <div class="grid-item"><img src="../image/lion5.png" class="small"></div>
+        <div class="grid-item"><img src="../image/lion6.png" class="small"></div>
+        <div class="grid-item"><img src="../image/lion7.jpeg" class="small"></div>
+        <div class="grid-item"><img src="../image/lion8.png" class="small"></div>
+        <div class="grid-item"><img src="../image/lion9.png" class="small"></div>
+      </div>
+      <div class="more">
+        <a href="#" id="moreA">more</a>
+      </div>
+      
+      <div id="more-contents">
+        <iframe id="moreFrame" src="https://e.kakao.com/t/ryan-special-edition" frameborder="0"></iframe>
+      </div>
+
+      <script>
+        let big = document.querySelector("#big");
+        let smallPics = document.querySelectorAll(".small");
+
+        for(let small of smallPics){
+            small.addEventListener("click", changePic);
+        }
+        function changePic(){
+            let newPic = this.src;
+            big.setAttribute("src", newPic);
+        }
+
+        let $more = document.querySelector("#moreA");
+        let moreContent = document.querySelector("#more-contents");
+
+        $more.addEventListener("click",function(){
+            if(moreContent.style.display == "none"){
+                moreContent.style.display = "block";
+            }else{
+                moreContent.style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+</html>

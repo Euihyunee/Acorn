@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container {
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+        fieldset{
+            border: 2px solid;
+            margin: 10px auto;
+        }
+        legend{
+            font-size: 20px;
+            font-family: serif;
+            font-weight: bold;
+        }
+        #fieldOne span{
+            line-height: 3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container" >
+        <h1 style="background-color: rgb(0, 147, 0);">총 주문 가격 확인</h1>
+
+        <fieldset id="fieldOne">
+            <legend>기본 가격</legend>
+            <span>30000원</span>
+        </fieldset>
+        <fieldset id="fieldTwo">
+            <legend>추가 주문</legend>
+            <input class="checkbox" type="checkbox" onclick="isChecked(0)" id="ck1">기장추가(1200원) 
+            <input class="checkbox" type="checkbox" onclick="isChecked(1)" id="ck2">배송 비용 (3000원)
+            <input class="checkbox" type="checkbox" onclick="isChecked(2)" id="ck3">산간지역 추가 비용(800원)
+            <input class="checkbox" type="checkbox" onclick="isChecked(3)" id="ck4">양말 (2개, 4800원)
+            <input class="checkbox" type="checkbox" onclick="isChecked(4)" id="ck5">선물 포장 (2400원)
+
+        </fieldset>
+        <fieldset id="fieldThree">
+            <legend>합계</legend>
+            <input id="totalPrice" type="text" value="30000원">
+        </fieldset>
+    </div>
+    <script>
+        let checkbox = document.querySelectorAll(".checkbox");
+        let total = 30000;
+        let totalPrice = document.querySelector("#totalPrice");
+        let arrPrice = [1200,3000,800,4800,2400];
+        function isChecked(number) {
+            if(checkbox[number].checked){
+                total += arrPrice[number];
+            }else{
+                total -= arrPrice[number];
+            }
+            totalPrice.value = total + "원";
+        }
+    </script>
+</body>
+</html>
