@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Travel Log</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #log {
+            margin-top: 20px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Travel Log</h1>
+
+    <form onsubmit="return logVisit()">
+        <label for="name">이름:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="place">방문한 곳:</label>
+        <input type="text" id="place" required><br><br>
+
+        <button type="submit">기록하기</button>
+    </form>
+
+    <div id="log">
+        <h2>방문 기록</h2>
+        <ul id="logList">
+            <!-- 기록한 내용이 여기에 추가될 것입니다. -->
+        </ul>
+    </div>
+
+    <script>
+        console.log("logvisit함수 실행")
+        function logVisit() {
+            event.preventDefault(); // 폼 제출 시 기본 동작을 막습니다.
+
+            // 이름과 방문한 곳 입력값 가져오기
+            const name = document.getElementById("name").value;
+            const place = document.getElementById("place").value;
+
+            // 방문 기록 리스트에 새로운 항목 추가
+            const logList = document.getElementById("logList");
+            const newItem = document.createElement("li");
+
+            console.log("sdfas");
+            newItem.textContent = `${name}님이 ${place}를 방문하셨습니다.`;
+            console.log(newItem);
+            logList.appendChild(newItem);
+
+            // 입력 필드 초기화
+            document.getElementById("name").value = "";
+
+            document.getElementById("place").value = "";
+
+            return false;
+        }
+        console.log("logvisit함수 완료")
+
+    </script>
+</body>
+</html>
