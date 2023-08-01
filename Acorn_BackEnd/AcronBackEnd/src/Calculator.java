@@ -3,47 +3,48 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        boolean num = true;
 
-        String result="";
-        String oper="";
-        String menuMsg= "1.계산하기\n2.나가기";
-        int num1 = 0;
-        int num2 = 0;
-        int choice = 0;
-
-        while(true) {
-            System.out.println(menuMsg);
-            choice = sc.nextInt();
-            if(choice == 2) { System.out.println("종료"); break;}
-            if(choice != 1) { System.out.println("잘못입력하셨습니다. 다시 입력해주세요"); continue;} // 다음 반복으로 넘어감, 즉 이 코드에선 맨윗줄로 넘어간다.
-            System.out.println("계산을 시작합니다. 숫자를 입력해주세요");
-
-            num1 = Integer.parseInt(sc.next());
-            oper = sc.next();
-            num2 = Integer.parseInt(sc.next());
-
-            switch(oper) {
-                case "+":
-                    result = ""+(num1+num2);
-                    break;
-                case "-":
-                    result = ""+(num1-num2);
-                    break;
-                case "*":
-                    result = ""+(num1*num2);
-                    break;
-                case "/":
-                    if(num2 !=0) {
-                        result = ""+(num1/num2);
-                    }
-                    else {
-                        result= "0으로 나눌 수 없습니다.";
-                    }
-                    break;
+        while (num) {
+            System.out.println("===메뉴===");
+            System.out.println("1. 더하기");
+            System.out.println("2. 빼기");
+            System.out.println("3. 곱하기");
+            System.out.println("4. 나누기");
+            System.out.println("이외. 종료");
+            System.out.println("=========");
+            int selectNum = sc.nextInt();
+            int num1, num2;
+            switch (selectNum) {
+                case 1:
+                    System.out.println(" 숫자 입력2개 숫자 사이 공백 필요");
+                    num1 = sc.nextInt();
+                    num2 = sc.nextInt();
+                    System.out.println("계산 : " + (num1 + num2));
+                    continue;
+                case 2:
+                    System.out.println(" 숫자 입력2개 숫자 사이 공백 필요");
+                    num1 = sc.nextInt();
+                    num2 = sc.nextInt();
+                    System.out.println("계산 : " + (num1 - num2));
+                    continue;
+                case 3:
+                    System.out.println(" 숫자 입력2개 숫자 사이 공백 필요");
+                    num1 = sc.nextInt();
+                    num2 = sc.nextInt();
+                    System.out.println("계산 : " + (num1 * num2));
+                    continue;
+                case 4:
+                    System.out.println(" 숫자 입력2개 숫자 사이 공백 필요");
+                    num1 = sc.nextInt();
+                    num2 = sc.nextInt();
+                    System.out.println("계산 : " + (num1 / num2));
+                    continue;
                 default:
-                    result="사직연산 외에 연산자는 사용할 수 없습니다.";
+                    System.out.println("종료합니다");
+                    num = false;
+                    break;
             }
-            System.out.println(result);
         }
     }
 }
