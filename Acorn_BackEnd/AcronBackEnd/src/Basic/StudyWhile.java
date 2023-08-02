@@ -1,3 +1,5 @@
+package Basic;
+
 public class StudyWhile {
     public static void main(String[] args) {
 
