@@ -1,6 +1,6 @@
 package logic;
 
-public class InsertSort {
+public class InsertSortAlg {
     public static void main(String[] args) {
         int [] scores = { 80, 70, 60, 50, 95};
         sort (scores);
