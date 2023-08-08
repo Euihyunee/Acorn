@@ -20,6 +20,7 @@ public class SelectSortAlg {
                 int temp = arrays[i];
                 arrays[i] = arrays[minIndex];
                 arrays[minIndex] = temp;
+
             }
         }
     }
