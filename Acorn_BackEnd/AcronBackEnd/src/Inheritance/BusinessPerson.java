@@ -2,6 +2,7 @@ package Inheritance;
 
 public class BusinessPerson extends Person{
 	// 필드 영역
+
 	private String company;
 
 	// 생성자 영역

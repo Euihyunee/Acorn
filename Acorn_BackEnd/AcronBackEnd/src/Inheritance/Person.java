@@ -1,9 +1,10 @@
 package Inheritance;
 
+
 public class Person {
 	
 	// 필드 영역
-	private String name; 
+	private  String name; 
 	private String number;
 	private int age;
 	private String address;
