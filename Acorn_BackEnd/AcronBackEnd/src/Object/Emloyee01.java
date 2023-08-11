@@ -16,4 +16,5 @@ public class Emloyee01 {
     public double getReturnTax(double ratio){
         return Salary * ratio;
     }
+
 }
