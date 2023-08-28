@@ -1,6 +1,8 @@
-package uml;
+package DesignPattern.FactoryPattern;
 
-
+/**
+ * 
+ */
 public interface Shape {
 
     /**
