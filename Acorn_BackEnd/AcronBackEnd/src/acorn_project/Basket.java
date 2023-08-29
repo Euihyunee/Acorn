@@ -1,6 +1,7 @@
 package acorn_project;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Basket {
 
@@ -21,9 +22,12 @@ public class Basket {
     	
     }
     // 사용자가 상품을 선택했을 때 장바구니에 추가하는 메서드
-    public void BasketAdd(Product product) {
+    public void BasketAdd(Product product, Scanner sc) {
+    	System.out.print("개수 입력 : ");
+    	int num = Integer.parseInt(sc.nextLine());
     	hashProduct.put(product.getterProductId(), 
-    			new BasketProduct(product));
+    			new BasketProduct(product, num));
+    	
     	System.out.println("선택하신 품목이 추가되었습니다.");
     }
     // 사용자가 장바구니에서 특정 품목을 삭제하는 메서드

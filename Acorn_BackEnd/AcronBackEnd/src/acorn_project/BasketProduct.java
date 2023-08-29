@@ -4,9 +4,9 @@ public class BasketProduct extends Product{
 	
 	private int Num;
 
-	public BasketProduct(Product product) {
+	public BasketProduct(Product product, int Num) {
 		super(product);
-		this.Num = 1;
+		this.Num = Num;
 	}
 	public void setterNum(int num) {
 		this.Num = num;
@@ -23,7 +23,7 @@ public class BasketProduct extends Product{
     			+ ". "
     			+ "상품명 : " 
     			+ super.getterProductName() 
-    			+ ", 가격 : " + super.getterPrice() + "원"
+    			+ ", 가격 : " + super.getterPrice() + "원 "
     			+ this.Num +"개"
     			);
     }
