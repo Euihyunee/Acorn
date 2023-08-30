@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Basket {
 
 
-    private  HashMap<Long, BasketProduct> hashProduct;
+    private  HashMap<Long, BasketProduct> hashProduct
+     = new HashMap<Long, BasketProduct>();
     
     
     // 장바구니 목록을 모두 띄움

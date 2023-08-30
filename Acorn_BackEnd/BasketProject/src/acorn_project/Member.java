@@ -35,7 +35,6 @@ public class Member {
 	// 주문 확인창 1.주문완료하시겠습니까? 2.배송지변경하시겠습니까? 3.뒤로가기.
 	public void orderCheck(Scanner sc){ 
 		boolean order = true;
-		
 		while(order) {
 			// 주문 정보 안내 문구
 			System.out.println("====================");
