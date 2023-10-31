@@ -7,20 +7,21 @@ public class VariablePractice1 {
     public static void main(String[] args) {
         // 이름, 성별, 나이, 키를 사용자에게 입력 받아 각가의 값을 변수에 담고 출력
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String name, gender;
         int age;
         double height;
 
 
+
         System.out.print("이름을 입력하세요 : ");
-        name = sc.nextLine();
+        name = scanner.nextLine();
         System.out.print("성별을 입력하세요(남/여) : ");
-        gender = sc.nextLine();
+        gender = scanner.nextLine();
         System.out.print("나이를 입력하세요 : ");
-        age = sc.nextInt();
+        age = scanner.nextInt();
         System.out.print("키를 입력하세요(cm) : ");
-        height = sc.nextDouble();
+        height = scanner.nextDouble();
 
         System.out.printf("키 %.1fcm인 %d살 %s자 %s님 반갑습니다 ^^", height, age, gender, name);
     }

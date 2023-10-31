@@ -1,5 +1,6 @@
 package Basic;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class Study02 {
@@ -7,7 +8,7 @@ public class Study02 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.print("국어점수:>>>");
 		int nlpoint = sc.nextInt();
 		System.out.print("영어점수:>>>");
